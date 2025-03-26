@@ -1,0 +1,297 @@
+/* Default styles apply to all devices */
+
+/* 📱 Mobile screens (max width 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust text size */
+    }
+    
+    .container {
+        width: 100%; /* Make container full width */
+        padding: 10px; /* Add spacing */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0; /* Stack navbar items */
+    }
+
+    .image {
+        max-width: 100%; /* Ensure images scale properly */
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr; /* Single column for better fit */
+    }
+
+    .news-item img, 
+    .news1 img, 
+    .news2 img, 
+    .news3 img, 
+    .news4 img, 
+    .news5 img {
+        max-width: 100%; /* Prevent overflow */
+        height: auto;    /* Keep aspect ratio */
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-size: 15px;
+        font-family:'Times New Roman';
+      }
+
+    p {
+        font-size: 12px;  
+    }
+}
+
+
+/* 💻 Tablet screens (max width 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%; /* Adjust layout for tablets */
+    }
+
+    .navbar {
+        justify-content: center; /* Center navbar items */
+    }
+}
+
+
+
+/* General Styling */
+body {
+    font-family:'Times New Roman', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.avif");
+    background-repeat: no-repeat;  /* Prevents repeating */
+    background-size: cover;  /* Makes the image cover the entire background */
+    background-position: center;  /* Centers the image */
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adjusts spacing between elements */
+    background-color: #1f3a52;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img {
+   height: 80px;
+}
+
+.news-title {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+/* Headlines */
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 20px ;
+}
+
+/* News Grid */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.news-grid img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.news-item {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.news-item img {
+    width: 100%;
+    max-width: 4000px;
+    border-radius: 10px;
+}
+
+.news-item figcaption {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Last Image (Centered) */
+.news-item:last-child {
+    grid-column: span 2; /* Makes the last item span across two columns */
+    text-align: center; /* Centers the text */
+    justify-self: center;
+}
+
+.news-item:last-child img {
+    max-width: 700px;  /* Adjust this value to match the other images */
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.news-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-item:hover img {
+    transform: scale(1.05); /* Zoom effect */
+}
+
+.news-item {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.news-item:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.politics  {
+    background-color: white;  /* White background for the main content */
+    padding: 20px;            /* Adds space inside the main section */
+    border-radius: 10px;      /* Soft rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px;             /* Adds space around the main section */
+    font-size: 20px;
+    border: 2px solid black;
+}
+  
+
+.news1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.news1 img{
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.boxing {
+    background-color: white;  /* White background for the main content */
+    padding: 20px;            /* Adds space inside the main section */
+    border-radius: 10px;      /* Soft rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px;             /* Adds space around the main section */
+    font-size: 20px;
+    border: 2px solid black;
+  }
+
+  .news2 img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  .business {
+    background-color: white;  /* White background for the main content */
+    padding: 20px;            /* Adds space inside the main section */
+    border-radius: 10px;      /* Soft rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px;             /* Adds space around the main section */
+    font-size: 20px;
+    border: 2px solid black;
+  }
+
+  .news3 img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  .crime {
+    background-color: white;  /* White background for the main content */
+    padding: 20px;            /* Adds space inside the main section */
+    border-radius: 10px;      /* Soft rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px;             /* Adds space around the main section */
+    font-size: 20px;
+    border: 2px solid black;
+  }
+
+  .news4 img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  .weather {
+    background-color: white;  /* White background for the main content */
+    padding: 20px;            /* Adds space inside the main section */
+    border-radius: 10px;      /* Soft rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px;             /* Adds space around the main section */
+    font-size: 20px;
+    border: 2px solid black;
+  }
+
+  .news5 img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-size: 35px;
+    font-family:'Times New Roman';
+  }
+
+  p {
+    text-align: justify;
+    text-indent: 20px; /* Adds indentation for the first line */
+    margin: 10px 20px; /* Adds spacing around the paragraph */
+    line-height: 1.6; /* Improves readability */
+}
+
+.references {
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: blue; /* Change to any color you prefer */
+    text-decoration: underline; /* Removes the underline */
+}
+
+/* Footer */
+footer {
+    background-color: #1f3a52;
+    padding: 15px;
+}
+
+.social-icons img {
+    width: 300px;
+    margin: 10px 5px;
+}
